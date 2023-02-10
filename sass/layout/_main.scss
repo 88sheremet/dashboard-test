@@ -1,0 +1,172 @@
+.main-info {
+  background-color: #fafbff;
+  padding: 41px 95px 258px 71px;
+  //   width: 100%;
+}
+
+.greeting-title {
+  margin-bottom: 51px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+.main-content {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  border-radius: 30px;
+  padding: 30px 44px 40px 38px;
+}
+
+.main-content___title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.main-content__members {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #16c098;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+}
+
+thead{
+ margin-bottom: 34px;
+}
+
+thead th::after{
+    content: "";
+    border: 1px solid #EEEEEE;
+    position: absolute;
+width: 968px;
+height: 0px;
+left: 377px;
+top: 294px;
+// margin-bottom: 24px;
+}
+
+thead th {
+  text-align: start;
+  width: 170px;
+  justify-content: flex-start;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b5b7c0;
+}
+
+thead tr {
+  justify-content: flex-start;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.active-box {
+  text-align: center;
+  color: #008767;
+}
+
+.company {
+  width: 130px;
+}
+
+.country {
+  width: 140px;
+}
+
+.phone {
+    width: 156px;
+  }
+
+  .email{
+    width: 207px; 
+}
+
+.country-name {
+  width: 140px;
+}
+
+.phone-number {
+    width: 156px;
+  }
+
+.company-name {
+  width: 130px;
+}
+
+.email-company{
+    width: 207px; 
+}
+
+.active-box {
+    width: 100px;
+}
+
+.inactive-box {
+  text-align: center;
+  color: #df0404;
+  width: 100px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+tbody tr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+tbody tr::after {
+    content: "";
+    position: absolute;
+width: 888px;
+height: 0px;
+left: 417px;
+// top: 363px;
+top: 375px;
+border: 1px solid #EEEEEE;
+  }
+
+tbody td {
+  text-align: start;
+  width: 170px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #292d32;
+}
+
+.status {
+  text-align: center;
+  width: 100px;
+}
+
+.activ-status {
+  display: inline-block;
+  width: 100px;
+  background-color: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.inactiv-status {
+  display: inline-block;
+  width: 100px;
+  background-color: #ffc5c5;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+  padding: 4px 18px;
+}
