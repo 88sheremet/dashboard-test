@@ -1,43 +1,42 @@
-.menu-container {
-  padding: 36px 28px 76px 28px;
-  //   height: 1198px;
-}
+$primaryColor: #ffffff;
+$titleColor: #000000;
 
-.menu {
-  // box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+.menu-container {
+  padding: 8px 8px 36px 14px;
 }
 
 .menu__logo {
   display: flex;
-  font-weight: 600;
-  font-size: 26px;
-
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.01em;
-
-  color: #000000;
-  margin-bottom: 65px;
+  color: $titleColor;
+  margin-bottom: 15px;
 }
 
-.menu__logo-version {
-  font-weight: 500;
+.menu__version {
+  font-weight: 400;
   font-size: 10px;
-
-  letter-spacing: -0.01em;
   color: #838383;
 }
 
-.menu-icon {
+.menu__icon {
+  margin-right: 8px;
+  width: 24px;
+}
+
+.menu-list__icon {
   margin-right: 14px;
   width: 24px;
 }
 
-.menu__logo-version {
+.menu__version {
   margin-left: 4px;
 }
 
-.logo-container {
+.menu__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .menu-list {
@@ -54,19 +53,19 @@
   border-radius: 8px;
 }
 
-.icon-container {
+.menu-list__icon-container {
   display: flex;
   align-items: center;
 }
 
-.menu-list__item-link {
+.menu-list__link {
   display: flex;
   align-items: center;
   width: 231px;
   color: #9197b3;
 }
 
-.link-description {
+.menu-list__description {
   font-weight: 500;
   font-size: 14px;
   color: #9197b3;
@@ -76,7 +75,7 @@
   display: flex;
 }
 
-.arrow-container {
+.menu-list__arrow-container {
   display: flex;
   width: inherit;
   justify-content: flex-end;
@@ -84,39 +83,154 @@
 
 .user {
   display: flex;
-  margin-top: 597px;
+  margin-top: 50px;
 }
 
 .current {
   background-color: #5932ea;
-  color: #ffffff;
+  color: $primaryColor;
 }
 
 .active {
   font-weight: 500;
   font-size: 14px;
 
-  color: #ffffff;
+  color: $primaryColor;
 }
 
 .menu-arrow-icon-current {
-  fill: #ffffff;
+  fill: $primaryColor;
 }
 
 .user__link {
   margin-right: 12px;
 }
 
-.user-name {
+.user__name {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  color: #000000;
+  color: $titleColor;
 }
 
-.user-profession {
+.user__profession {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   color: #757575;
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-container {
+    padding: 36px 28px 76px 28px;
+  }
+
+  .menu__logo {
+    display: flex;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    color: $titleColor;
+    margin-bottom: 65px;
+  }
+
+  .menu__version {
+    font-weight: 500;
+    font-size: 10px;
+    color: #838383;
+  }
+
+  .menu-icon {
+    margin-right: 8px;
+    width: 24px;
+  }
+
+  .menu__version {
+    margin-left: 4px;
+  }
+
+  .menu__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  .menu-list__item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding: 11px 8px 11px 11px;
+    border-radius: 8px;
+  }
+
+  .menu-list__icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-list__link {
+    display: flex;
+    align-items: center;
+    width: 231px;
+    color: #9197b3;
+  }
+
+  .menu-list__description {
+    font-weight: 500;
+    font-size: 14px;
+    color: #9197b3;
+  }
+
+  .menu-arrow-icon {
+    display: flex;
+  }
+
+  .menu-list__arrow-container {
+    display: flex;
+    width: inherit;
+    justify-content: flex-end;
+  }
+
+  .user {
+    display: flex;
+    margin-top: 597px;
+  }
+
+  .current {
+    background-color: #5932ea;
+    color: $primaryColor;
+  }
+
+  .active {
+    font-weight: 500;
+    font-size: 14px;
+    color: $primaryColor;
+  }
+
+  .menu-arrow-icon-current {
+    fill: $primaryColor;
+  }
+
+  .user__link {
+    margin-right: 12px;
+  }
+
+  .user__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: $titleColor;
+  }
+
+  .user__profession {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575;
+  }
 }
